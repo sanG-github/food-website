@@ -8,7 +8,7 @@ app.engine('html', swig.renderFile);
 app.set('view engine', 'html');
 
 app.get('/', (req, res) => {
-	res.render('index');
+	res.render('index.html');
 });
 
 app.listen(port, () => {console.log("Listening on port " + port)});

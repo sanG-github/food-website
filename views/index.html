@@ -4,36 +4,214 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./style.css">
 	<title>We do you need?</title>
 	<link rel="shortcut icon" type="image/png" href="https://img.favpng.com/4/14/15/vector-graphics-computer-icons-restaurant-logo-food-png-favpng-KZrC13QiaGyBhFjD1vMFbb57A.jpg"/>
-	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora&family=Roboto&display=swap" rel="stylesheet">
-
-<style>
-	.first-background .welcome{
-		background-image: url("https://i.imgur.com/o4xgjM4.jpg");
-		width: 100%;
-		height: 120rem;
-	}
-	.welcome .text {
-		width: 100%;
-		display: inline-block;
-		text-align: center;
-		font-size: 75px;
-		color: #FFF;
-	}
-</style>	
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora&family=Roboto&family=Roboto:wght@900&family=Bangers&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
-<body style="margin: 0px;">
+<body style="margin: 0px">
 	<div class="first-background">
 		<div class="welcome">
 			<div class="text">
-				<h1 style="font-family: 'Great Vibes';">Welcome To</h1>
-				<h2 style="font-family: 'Lora', serif;">Bach Khoa Food x Beverage</h2>
+				<img src="https://i.imgur.com/631gruO.png">
+				<h2>FOOD</h2>
+				<h2>x</h2>
+				<h2>BEVERAGE</h2>
+				<img src="http://lavierestaurant.demo1.wpdance.com/intro/assets/img/star.png" style="margin-top: 20px;">
+			</div>
+			<div style="display: flex; justify-content: center; margin-top:150px">
+				<button type="button" class="btn-log m-5">Register</button>
+				<button type="button" class="btn-log m-5">Log in</button>
 			</div>
 		</div>
 	</div>
+	<div class="choose-genre">
+		<span style="text-align: center;">CHOOSE WHAT YOU WANT?
+			<div class="spinner-grow" role="status">
+			  	<span class="sr-only">Loading...</span>
+			</div>
+		</span>
+
+		<div class="row row-cols-1 row-cols-md-5 shadow p-3 mb-5 bg-white rounded" style="margin: 40px 5em;">
+
+		  	<div class="col mb-3">
+			  	<a href="#" style="text-decoration: none;">
+				    <div class="card m-2 custom-card">
+				      <img src="https://picsum.photos/300/500" class="card-img-top">
+				      <div class="card-body">
+				        <h5 id="1" class="card-title text-center">FOOD</h5>
+				      </div>
+				    </div>
+			    </a>
+		  	</div>
+		  	<div class="col mb-3">
+			  	<a href="#" style="text-decoration: none;">
+				    <div class="card m-2 custom-card">
+				      <img src="https://i.imgur.com/8zSqoWN.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title text-center">BEVERAGE</h5>
+				      </div>
+				    </div>
+			    </a>
+		  	</div>
+		  	<div class="col mb-3">
+			  	<a href="#" style="text-decoration: none;">
+				    <div class="card m-2 custom-card">
+				      <img src="https://picsum.photos/300/500" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title text-center">SNACK</h5>
+				      </div>
+				    </div>
+			    </a>
+		  	</div>
+		  	<div class="col mb-3">
+			  	<a href="#" style="text-decoration: none;">
+				    <div class="card m-2 custom-card">
+				      <img src="https://picsum.photos/300/500" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title text-center">BOOK</h5>
+				      </div>
+				    </div>
+			    </a>
+		  	</div>
+		  	<div class="col mb-3">
+			  	<a href="#" style="text-decoration: none;">
+				    <div class="card m-2 custom-card">
+				      <img src="https://picsum.photos/300/500" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title text-center">EQUIPMENT</h5>
+				      </div>
+				    </div>
+			    </a>
+		  	</div>
+		</div>
+	</div>
+
+	<div class="fast-choices">
+		<div class="header-choices">
+			<span style="text-align: center;">  OR QUICK CHOICES ... </span>
+		</div>
+
+		<div style="display: flex; justify-content: center;">
+			<button id="btn-food" type="button" class="btn btn-lg m-2"> FOOD </button>
+			<button id="btn-drink" type="button" class="btn btn-lg m-2"> DRINK</button>
+		</div>
+
+		<div class="carousel-frame">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			  <div id= "carousel-inner" class="carousel-inner">
+			    <!-- <div class="carousel-item active">
+			      <img src="https://i.imgur.com/0uKoa9K.png" class="d-block w-80">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="https://i.imgur.com/0uKoa9K.png" class="d-block w-80">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="https://i.imgur.com/0uKoa9K.png" class="d-block w-80">
+			    </div> -->
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #000"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #000"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>		
+		</div>
+
+	</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	var listFood = [
+	{
+		url: "https://i.imgur.com/0uKoa9K.png",
+		name: "Mì"
+	},
+	{
+		url: "https://i.imgur.com/6PDJ9dw.png",
+		name: "Bánh mì"
+	},
+	{
+		url: "https://i.imgur.com/i4P3dUG.png",
+		name: "Xúc xích nướng"
+	},
+	{
+		url: "https://i.imgur.com/5Hy2oy0.png",
+		name: "Bánh bao"
+	},
+	{
+		url: "https://i.imgur.com/AbISLDP.png",
+		name: "Cơm nắm"
+	},
+	{
+		url: "https://i.imgur.com/lr8jtk9.png",
+		name: "Sandwich"
+	},
+	{
+		url: "https://i.imgur.com/zMplzBM.png",
+		name: "Tráng miệng"
+	}];
+
+	var listDrink = [
+	{
+		url: "https://i.imgur.com/5ZNpcyh.png",
+		name: "Froster"
+	},
+	{
+		url: "https://i.imgur.com/kvjeBbF.png",
+		name: "Cà Phê Việt Nam"
+	},
+	{
+		url: "https://i.imgur.com/znSHqyh.png",
+		name: "Nestlé"
+	},
+	{
+		url: "https://i.imgur.com/uh7MOOm.png",
+		name: "Cà Phê Kiểu Mỹ"
+	},
+	{
+		url: "https://i.imgur.com/DgHJfry.png",
+		name: "Thức Uống Pha Chế"
+	}];
+
+	var carouselInner = document.getElementById('carousel-inner');
+	var carouselIndicators = document.getElementById('carousel-indicators');
+	var btnFood = document.getElementById('btn-food');
+	var btnDrink = document.getElementById('btn-drink');
+	var carouselFood = "";
+	var carouselDrink = "";
+
+	// choose item in carouselInner
+	var chooseTab = (item, list) => {
+		carouselDrink = "";
+		textIndicator = "";
+		for(let i = 0; i < list.length; i++) {
+			if(i == 0)
+				item += '<div class="carousel-item active"><img src="' 
+				+ list[i].url + '" class="d-block w-80"></div>';
+			else
+				item += '<div class="carousel-item"><img src="' 
+				+ list[i].url + '" class="d-block w-80"></div>';
+		}
+		carouselInner.innerHTML = item;
+	};
+
+	chooseTab(carouselFood, listFood);
+
+	btnDrink.addEventListener('click', function(){
+		chooseTab(carouselDrink, listDrink);
+	});
+
+	btnFood.addEventListener('click', function(){
+		chooseTab(carouselFood, listFood);
+	});
+	
 
 </script>
 </html>
